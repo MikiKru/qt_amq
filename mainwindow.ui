@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pb11">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -60,7 +63,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>X</string>
+     <string>3</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblBackground">
@@ -80,6 +83,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb21">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -103,6 +109,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb31">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -126,6 +135,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb22">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -149,6 +161,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb32">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -172,6 +187,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb12">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -195,6 +213,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb23">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -218,6 +239,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb33">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -241,6 +265,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="pb13">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>300</x>
