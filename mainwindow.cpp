@@ -82,8 +82,6 @@ void MainWindow::on_pb21_clicked()
         ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 3){
         ui->lblMovesValue->setText("PRZEGRANA");
-    } else {
-        ui->start->setText("NIC");
     }
     ui->pb21->setDisabled(true);
     if(moves == 0){
@@ -99,8 +97,6 @@ void MainWindow::on_pb22_clicked()
         ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 4){
         ui->lblMovesValue->setText("PRZEGRANA");
-    } else {
-        ui->start->setText("NIC");
     }
     ui->pb22->setDisabled(true);
 }
