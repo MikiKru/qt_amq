@@ -34,13 +34,14 @@ void MainWindow::on_pb11_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 0){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 0){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb11->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb12_clicked()
@@ -48,13 +49,14 @@ void MainWindow::on_pb12_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 1){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 1){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb12->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb13_clicked()
@@ -62,13 +64,14 @@ void MainWindow::on_pb13_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 2){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 2){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb13->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb21_clicked()
@@ -76,13 +79,16 @@ void MainWindow::on_pb21_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 3){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 3){
-        ui->start->setText("SZCZUR");
+        ui->lblMovesValue->setText("PRZEGRANA");
     } else {
         ui->start->setText("NIC");
     }
     ui->pb21->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb22_clicked()
@@ -90,9 +96,9 @@ void MainWindow::on_pb22_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 4){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 4){
-        ui->start->setText("SZCZUR");
+        ui->lblMovesValue->setText("PRZEGRANA");
     } else {
         ui->start->setText("NIC");
     }
@@ -104,13 +110,14 @@ void MainWindow::on_pb23_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 5){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 5){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb23->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 
@@ -120,13 +127,14 @@ void MainWindow::on_pb31_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 6){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 6){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb31->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb32_clicked()
@@ -134,13 +142,14 @@ void MainWindow::on_pb32_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 7){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 7){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb32->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 void MainWindow::on_pb33_clicked()
@@ -148,13 +157,14 @@ void MainWindow::on_pb33_clicked()
     moves --;
     ui->lblMovesValue->setText(QString::number(moves));
     if(cat == 8){
-        ui->start->setText("KOT");
+        ui->lblMovesValue->setText("WYGRANA");
     } else if(rat == 8){
-        ui->start->setText("SZCZUR");
-    } else {
-        ui->start->setText("NIC");
+        ui->lblMovesValue->setText("PRZEGRANA");
     }
     ui->pb33->setDisabled(true);
+    if(moves == 0){
+      ui->lblMovesValue->setText("PRZEGRANA");
+    }
 }
 
 
