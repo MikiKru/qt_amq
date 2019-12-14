@@ -16,33 +16,27 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-static QString board = "_________";
 int cat = 0;
 int rat = 0;
 int moves = 3;
 void assignCatToBoard(){
     srand(time(NULL));
-    int cat = rand() % 10;
+    cat = rand() % 10;
 }
 void assignRatToBoard(){
     srand(time(NULL));
     do{
-    int rat = rand() % 10;
+    rat = rand() % 10;
     }while(cat == rat);
 }
-void MainWindow::on_pushButton_clicked()
-{
-    moves = 3;
-    assignCatToBoard();
-    assignRatToBoard();
-    board = "_________";
-}
+
+
 
 void MainWindow::on_pb11_clicked()
 {
-    if(board[0] == "K"){
+    if(cat == 0){
         ui->start->setText("KOT");
-    } else if(board[0] == "R"){
+    } else if(rat == 0){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -52,9 +46,9 @@ void MainWindow::on_pb11_clicked()
 
 void MainWindow::on_pb12_clicked()
 {
-    if(board[1] == "K"){
+    if(cat == 1){
         ui->start->setText("KOT");
-    } else if(board[1] == "R"){
+    } else if(rat == 1){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -64,9 +58,9 @@ void MainWindow::on_pb12_clicked()
 
 void MainWindow::on_pb13_clicked()
 {
-    if(board[2] == "K"){
+    if(cat == 2){
         ui->start->setText("KOT");
-    } else if(board[2] == "R"){
+    } else if(rat == 2){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -76,9 +70,9 @@ void MainWindow::on_pb13_clicked()
 
 void MainWindow::on_pb21_clicked()
 {
-    if(board[3] == "K"){
+    if(cat == 3){
         ui->start->setText("KOT");
-    } else if(board[3] == "R"){
+    } else if(rat == 3){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -88,9 +82,9 @@ void MainWindow::on_pb21_clicked()
 
 void MainWindow::on_pb22_clicked()
 {
-    if(board[4] == "K"){
+    if(cat == 4){
         ui->start->setText("KOT");
-    } else if(board[4] == "R"){
+    } else if(rat == 4){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -100,9 +94,9 @@ void MainWindow::on_pb22_clicked()
 
 void MainWindow::on_pb23_clicked()
 {
-    if(board[5] == "K"){
+    if(cat == 5){
         ui->start->setText("KOT");
-    } else if(board[5] == "R"){
+    } else if(rat == 5){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -112,9 +106,9 @@ void MainWindow::on_pb23_clicked()
 
 void MainWindow::on_pb31_clicked()
 {
-    if(board[6] == "K"){
+    if(cat == 6){
         ui->start->setText("KOT");
-    } else if(board[6] == "R"){
+    } else if(rat == 6){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -124,9 +118,9 @@ void MainWindow::on_pb31_clicked()
 
 void MainWindow::on_pb32_clicked()
 {
-    if(board[7] == "K"){
+    if(cat == 7){
         ui->start->setText("KOT");
-    } else if(board[7] == "R"){
+    } else if(rat == 7){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -136,9 +130,9 @@ void MainWindow::on_pb32_clicked()
 
 void MainWindow::on_pb33_clicked()
 {
-    if(board[8] == "K"){
+    if(cat == 8){
         ui->start->setText("KOT");
-    } else if(board[8] == "R"){
+    } else if(rat == 8){
         ui->start->setText("SZCZUR");
     } else {
         ui->start->setText("NIC");
@@ -147,3 +141,21 @@ void MainWindow::on_pb33_clicked()
 }
 
 
+void MainWindow::on_start_clicked()
+{
+    moves = 3;
+    assignCatToBoard();
+    assignRatToBoard();
+}
+void MainWindow::on_pbStart_clicked()
+{
+    moves = 3;
+    assignCatToBoard();
+    assignRatToBoard();
+}
+void MainWindow::on_pushButton_clicked()
+{
+    moves = 3;
+    assignCatToBoard();
+    assignRatToBoard();
+}
