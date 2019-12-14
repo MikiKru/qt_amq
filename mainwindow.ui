@@ -63,19 +63,6 @@
      <string>X</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lblResult">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>490</y>
-      <width>191</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>WYGRANA</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="lblBackground">
     <property name="geometry">
      <rect>
@@ -276,11 +263,23 @@
      </size>
     </property>
    </widget>
+   <widget class="QPushButton" name="start">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>440</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
    <zorder>lblBackground</zorder>
    <zorder>pb11</zorder>
    <zorder>lblMoves</zorder>
    <zorder>lblMovesValue</zorder>
-   <zorder>lblResult</zorder>
    <zorder>pb21</zorder>
    <zorder>pb31</zorder>
    <zorder>pb22</zorder>
@@ -289,6 +288,7 @@
    <zorder>pb23</zorder>
    <zorder>pb33</zorder>
    <zorder>pb13</zorder>
+   <zorder>start</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
